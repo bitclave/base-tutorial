@@ -7,17 +7,7 @@
         "start": "babel src -d dist; node ./dist/index.js"
     },
     "dependencies": {
-        "ajv": "^6.5.1",
-        "babel-polyfill": "^6.26.0",
-        "bitcore-ecies": "^1.0.3",
-        "bitcore-lib": "^0.15.0",
-        "bitcore-message": "^1.0.4",
-        "bitcore-mnemonic": "^1.5.0",
-        "crypto-js": "^3.1.9-1",
-        "eth-sig-util": "^1.4.2",
-        "rxjs": "^6.2.1",
-        "rxjs-compat": "^6.2.1",
-        "xmlhttprequest": "^1.8.0"
+        "@bitclave/base-client-js": "0.1.1"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
