@@ -5,6 +5,10 @@ This reference application demonstrates how to use BASE API using [BASE JS LIBRA
 The application lets user to choose a passphrase to create his private & public key pair and use his private key to encrypt  data and save it to BASE. User can retrieve his data any time and decrypt it using his private key. Either passphrase or private key is never sent to BASE platform.
 
 # How to use Base Platform
+1. Install using npm
+    ```
+        npm install --save @bitclave/base-client-js
+    ```
 1. Initialise Base
     ```
     const base = new Base("https://base-node-staging.herokuapp.com", 'localhost', '', '');    
@@ -51,3 +55,7 @@ $ npm --version
 $ npm i
 $ npm run start
 ```
+# FAQs
+1. I see an error when using *base-client-js* - `Error: More than one instance of bitcore-lib found. Please make sure to require bitcore-lib and check that submodules do not also include their own bitcore-lib dependency.`
+
+    This is caused by version gaurd in bitcore-lib. So use a similar [postinstall](./remove-bit-core-lib.js) script to remove     all transitive bitcore-lib dependencies.

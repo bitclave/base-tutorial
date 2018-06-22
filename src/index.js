@@ -1,6 +1,6 @@
 'use strict';
 
-import Base from "./lib/Bitclave-Base";
+import Base from "@bitclave/base-client-js";
 
 //required for babel to polyfill regeneratorRuntime
 require("babel-polyfill");
