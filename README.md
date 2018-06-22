@@ -58,4 +58,4 @@ $ npm run start
 # FAQs
 1. I see an error when using *base-client-js* - `Error: More than one instance of bitcore-lib found. Please make sure to require bitcore-lib and check that submodules do not also include their own bitcore-lib dependency.`
 
-This is caused by version gaurd in bitcore-lib. So use a similar [postinstall](./remove-bit-core-lib.js) script to remove all transitive bitcore-lib dependencies.
+    This is caused by version gaurd in bitcore-lib. So use a similar [postinstall](./remove-bit-core-lib.js) script to remove     all transitive bitcore-lib dependencies.
